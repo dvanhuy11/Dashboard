@@ -1,0 +1,13 @@
+  .container{
+    display: flex;
+   }
+  .box{
+    padding: auto;
+ }
+ .head{
+    background-color: #02104e; 
+    color: rgb(226, 229, 235); 
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+  }

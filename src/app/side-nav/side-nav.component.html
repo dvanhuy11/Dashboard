@@ -1,0 +1,48 @@
+<!-- <div class="nav-items">
+    <div class="nav-item">Upload File</div>
+    <hr>
+    <div class="nav-item">Extract features</div>
+    <hr>
+    <div class="nav-item">Detect Face</div>
+    <hr>
+    <div class="nav-item">Compare</div>
+    <hr>
+    <div class="nav-item">Insert DB</div>
+    <hr>
+    <div class="nav-item">Contact</div>
+    <hr>
+    <div class="nav-item">Help</div>
+  </div> -->
+   
+<!-- side navigator -->
+<!-- <div cdkDropListGroup>
+  <div class="display">
+    <div class="nav-items">
+      <div
+          cdkDropList 
+          [cdkDropListData]="data"
+          (cdkDropListDropped)="drop($event)">
+          @for (item of data; track item) {
+            <div class="nav-item" cdkDrag>{{item}}</div>
+          }
+      </div>
+  </div>
+  <div class="box"></div>
+</div> -->
+
+
+<div cdkDropListGroup>
+  <div class="display">
+    <div class="nav-items" cdkDropList [cdkDropListData]="data" (cdkDropListDropped)="drop($event)">
+      @for (item of data; track item) {
+        <div class="nav-item" cdkDrag>{{item}}</div>
+      }
+    </div>
+    <div class="box" 
+    cdkDropList [cdkDropListData]="boxData" (cdkDropListDropped)="drop($event)">
+      @for (item of boxData; track item) {
+        <div class="nav-item" cdkDrag>{{item}}</div>
+      }
+    </div>
+  </div>
+</div>
